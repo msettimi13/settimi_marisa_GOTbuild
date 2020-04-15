@@ -3,7 +3,7 @@
   
   let imageBanner = document.querySelector("#houseImages"),
     houseName = document.querySelector(".house-name"),
-    houseDescription = document.querySelector(".house-info");
+    houseDescription = document.querySelector(".house-info"),
     sigils = document.querySelectorAll(".sigilContainer"),
     houseImages = document.querySelectorAll('#houseImages img'),
     lightbox = document.querySelector('.lightbox'),

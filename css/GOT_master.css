@@ -36,7 +36,7 @@ main {
 	overflow:hidden;
 }
 
-#houseImages { position:relative; width:4000px; transition: all .5s; }
+#houseImages { position:relative; width:4900px; transition: all .5s; }
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -80,6 +80,12 @@ main {
 
 .arryn { background-position:-253px -54px; }
 .arryn:hover { background-position:-253px 0px; }
+
+.targaryen { background-position:-303px -54px; }
+.targaryen:hover { background-position:-303px 0px; }
+
+.frey { background-position:-353px -54px; }
+.frey:hover { background-position:-353px 0px; }
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -100,15 +106,15 @@ main {
 
 .lightbox {
 	display: none;
-	position: absolute; 
-	top: 0; 
-	width: 100%; 
-	height: 100%; 
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 	background-color: rgba(0,0,0,0.95);
 }
 
-.close-lightbox {
+.closeLightbox {
 	position: absolute;
 	right: 12px;
 	top: 12px;
@@ -119,10 +125,34 @@ main {
 	cursor: pointer;
 }
 
-.show-lightbox { display: block; }
+.showLightbox { display: block; }
 
 video {
 	width: 80%;
 	margin-top: 10%;
 	border: thin solid #949393;
 }
+
+.controlsIcons {
+margin-top: 1.5em;
+border: none;
+}
+
+[data-icon] {
+font-size: 3em;
+color: #fff;
+cursor: pointer;
+}
+
+.controlsIcons ul {
+list-style: none;
+}
+
+.controlsIcons ul li {
+display: inline-block;
+padding: 0.1em;
+}
+
+
+
+
