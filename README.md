@@ -2,7 +2,7 @@
 
 ## About
 
-
+A website to explain the houses of the show, Game of Thrones. 
 
 ## Requirements 
 
