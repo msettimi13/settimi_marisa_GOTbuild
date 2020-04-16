@@ -9,8 +9,6 @@
     lightbox = document.querySelector('.lightbox'),
     closeLBox = lightbox.querySelector('.close-lightbox'),
     vidPlayer = lightbox.querySelector('video'),
-    cuePts = vidPlayer.textTracks[0],
-    offSet = 600;
   
   const houseData = [ 
   
