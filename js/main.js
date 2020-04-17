@@ -82,52 +82,49 @@
     and two of his sons, Lothar Frey and Walder Rivers, by the vengeful Arya Stark. This
     is made more complex by the subsequent assassination of all the male Freys soon after.`]
 
-  ]
+  ];
 
-  //function moveBanner() {
-    //imageBanner.style.right = (offSet * this.dataset.offset) + "px";
-
-  //  let houseName = this.className.split(' ')[1];
-
-  //  showHouseVideo(houseName);
-//  }
-
+  // getting house name and desc to change, video to appear, and triggering banners to change
    function showLightbox() {
     //debugger;
-    houseName.textContent = `House-${houseData[this.dataset.offset][0]}`;
-    houseDescription.textContent = `${houseData[this.dataset.offset][1]}`;
-    let targetName = this.className.split(" ")[1];
-    let targetSource = targetName.slice(1);
+      houseName.textContent = `House-${houseData[this.dataset.offset][0]}`;
+      houseDescription.textContent = `${houseData[this.dataset.offset][1]}`;
+      let targetName = this.className.split(" ")[1];
+      let targetSource = targetName.slice(1);
 
-    lightbox.classList.add('showLightbox');
-    let newVideoSource = `video/House-${targetName}.mp4`;
-    vidPlayer.src = newVideoSource;
-    vidPlayer.play();
+      lightbox.classList.add('showLightbox');
+      let newVideoSource = `video/House-${targetName}.mp4`;
+      vidPlayer.src = newVideoSource;
+      vidPlayer.play();
 
-    animateBanners(this.dataset.offset);
-
+      animateBanners(this.dataset.offset);
   }
 
+// close lightbox
     function closeLightbox() {
       lightbox.classList.remove("showLightbox");
-      houseVideo.pause();
-      houseVideo.currentTime = 0;
+      vidPlayer.pause();
+      vidPlayer.currentTime = 0;
     }
 
+// pause video
     function pauseVideo() {
       vidPlayer.pause()
     }
 
+// play video
     function playVideo() {
       vidPlayer.playbackRate = 1;
       vidPlayer.play()
     }
 
+//rewind video
     function rewindVideo() {
       vidPlayer.currentTime = 0;
       vidPlayer.play()
     }
 
+// animating banners to change after video is done
     function animateBanners(offset) {
       console.log(600 * offset);
 

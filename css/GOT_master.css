@@ -40,10 +40,10 @@ main {
 #houseImages img { float:left; }
 
 .house-info {
-  font-family: 'GOT_font';
+  font-family: arial, sans-serif;
   color: white;
   width: 75%;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.5;
   margin: 10px auto 0 auto;
 }
@@ -52,11 +52,13 @@ main {
   font-family: 'GOT_font';
   color: white;
   margin-top:30px;
-  font-size:2em;
+  font-size:1.5em;
+  line-height: 1.5;
 }
 
-
-#bottomNav { margin-top:30px; }
+#bottomNav {
+  margin-top:30px;
+}
 
 #navList li {
 	display:inline;
@@ -149,14 +151,16 @@ main {
 
 video {
 	width: 70%;
-	margin-top: 5% auto 0 auto;
+	margin-top: 5%;
+  margin-left: 15%;
 	border: thin solid #949393;
 	display: block;
 }
 
 .controls i {
-	colour: white;
-	height: 2em;
+  margin: 30px;
+  width: 15px;
 	cursor: pointer;
-	padding: 0 5% 0 0;
+  font-size: 3em;
+  color: white;
 }
