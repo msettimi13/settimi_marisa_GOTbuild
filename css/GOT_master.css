@@ -21,6 +21,10 @@ h1 {
 	font-size: 3em;
 }
 
+.hidden {
+	display: none;
+}
+
 main {
 	position:relative;
 	width:100%;
