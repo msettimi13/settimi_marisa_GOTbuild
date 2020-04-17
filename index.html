@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Game of Thrones</title>
@@ -12,19 +12,21 @@
 <main>
 
     <section id="imageContainer">
+        <h2 class="hidden">House Images</h2>
     	<div id="houseImages"> <!-- add in all of the images to make a scrolling "banner" -->
-    		<img src="images/stark.jpg"/>
-    		<img src="images/baratheon.jpg"/>
-    		<img src="images/lannister.jpg"/>
-    		<img src="images/tully.jpg"/>
-    		<img src="images/greyjoy.jpg"/>
-    		<img src="images/arryn.jpg"/>
-            <img src="images/targaryen.jpg"/>
-            <img src="images/frey.jpg"/>
+    		<img src="images/stark.jpg" alt="stark">
+    		<img src="images/baratheon.jpg" alt="baratheon">
+    		<img src="images/lannister.jpg" alt="lannister">
+    		<img src="images/tully.jpg" alt="tully">
+    		<img src="images/greyjoy.jpg" alt="greyjoy">
+    		<img src="images/arryn.jpg" alt="arryn">
+            <img src="images/targaryen.jpg" alt="targaryen">
+            <img src="images/frey.jpg" alt="frey">
         </div>
     </section>
 
     <nav id="bottomNav">
+        <h2 class="hidden">Bottom Nav</h2>
     	<ul id="navList">
         	<!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
             <li><div class="sigilContainer stark" data-offset="0"></div></li>
@@ -45,7 +47,7 @@
 
 <!-- creating lightbox -->
 <section class="lightbox">
-    <h1 class="house-name"></h1>
+
     <span class="close-lightbox">x</span>
 
 <!-- adding video -->
@@ -55,7 +57,7 @@
 
 <!-- adding icons -->
     <div class="controls">
-        <h3 class="hidden">Controls for Video</h3>
+        <h2 class="hidden">Controls</h2>
         <i class="fas fa-play-circle"></i>
         <i class="fas fa-pause-circle"></i>
         <i class="fas fa-backward"></i>
