@@ -16,9 +16,9 @@ body { background-image:url(../images/grungeBG.jpg);
 
 h1 {
 	font-family: 'GOT_font';
-	color:white;
-	margin-top:30px;
-	font-size:1.25em;
+	color: white;
+	margin-top: 30px;
+	font-size: 3em;
 }
 
 main {
@@ -38,6 +38,23 @@ main {
 
 #houseImages { position:relative; width:4900px; transition: all .5s; }
 #houseImages img { float:left; }
+
+.house-info {
+  font-family: 'GOT_font';
+  color: white;
+  width: 75%;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 10px auto 0 auto;
+}
+
+.house-name {
+  font-family: 'GOT_font';
+  color: white;
+  margin-top:30px;
+  font-size:2em;
+}
+
 
 #bottomNav { margin-top:30px; }
 
@@ -114,7 +131,7 @@ main {
 	background-color: rgba(0,0,0,0.95);
 }
 
-.closeLightbox {
+.close-lightbox {
 	position: absolute;
 	right: 12px;
 	top: 12px;
@@ -127,32 +144,19 @@ main {
 
 .showLightbox { display: block; }
 
+
+/* video and controls */
+
 video {
-	width: 80%;
-	margin-top: 10%;
+	width: 70%;
+	margin-top: 5% auto 0 auto;
 	border: thin solid #949393;
+	display: block;
 }
 
-.controlsIcons {
-margin-top: 1.5em;
-border: none;
+.controls i {
+	colour: white;
+	height: 2em;
+	cursor: pointer;
+	padding: 0 5% 0 0;
 }
-
-[data-icon] {
-font-size: 3em;
-color: #fff;
-cursor: pointer;
-}
-
-.controlsIcons ul {
-list-style: none;
-}
-
-.controlsIcons ul li {
-display: inline-block;
-padding: 0.1em;
-}
-
-
-
-
